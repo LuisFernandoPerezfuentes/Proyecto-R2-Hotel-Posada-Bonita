@@ -1,0 +1,19 @@
+/*FOOTER*/
+.fo-oter{
+    padding-top: 20px !important;
+    color: #fff !important;
+    background: rgba(0, 0, 0, 0.75);
+    font-family: 'Bungee', cursive;
+  }
+  
+  .fo-oter p{
+    font-size: .9rem;
+    font-family: 'Bungee', sans-serif !important;
+    text-align: justify;
+  
+  }
+  
+  .tamaño-redes{
+    font-size: .9rem;
+    font-family: 'Bungee', sans-serif !important;
+  }

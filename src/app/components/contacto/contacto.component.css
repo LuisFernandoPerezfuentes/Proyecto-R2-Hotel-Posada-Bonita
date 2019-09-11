@@ -1,0 +1,23 @@
+/*SERVICIOS*/
+.services{
+    padding-top: 5%;
+  }
+  
+  /*CONTACTO*/
+  .boton{
+  background-color: #ff6e40 !important;
+  left: 10px;
+  bottom: 30px;
+  }
+  
+  .form-1{
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+    margin-bottom: 30px !important;
+    margin-top: 80px !important;
+    background-color: whitesmoke;
+  }
+  .tipografia-contact{
+    background-color: aliceblue !important;
+    font-family: 'Bungee', cursive;
+  }

@@ -1,0 +1,522 @@
+.backgroundNavbar {
+    background-color: #ffffff!important;
+    transition: background-color .5s;
+   }
+   
+   .customNavbar{
+       width: 100%;
+       height: auto;
+       position: relative;
+       font-family: 'Titan One', cursive;
+   }
+   
+   .innerNavbar {
+       width: 100%;
+       height: auto;
+       background-color: #ffffffcc;
+       z-index: 999;
+       padding: 0;
+       transition: all .5s;
+       top: 0;
+   }
+   #navbar {
+       width: 100%;
+       height: auto;
+       position: fixed;
+       background-color: #ffffff !important;
+       z-index: 999;
+       padding: 0;
+       transition: all .5s;
+       top: 0;
+   }
+   .innerResponsive {
+       width: 50px;
+       height: auto;
+       position: fixed;
+       background-color: transparent;
+       z-index: 999;
+       padding: 0;
+       transition: all .5s;
+       top: 0;
+       display: none;
+   }
+
+      
+   .img-tam{
+    max-width: 50% !important;
+}
+   
+   .navbarContent {
+       width: 70%;
+       height: 110px;
+       margin: 0 auto;
+   }
+   
+   .logoNavbar {
+       width: 20%;
+       height: auto;
+       padding: 1%;
+       text-align: left;
+       float: left;
+   }
+   
+   .navbarList {
+       width: 80%;
+       height: auto;
+       padding: 1%;
+       float: left;
+   }
+   
+   .navbarOptions {
+       width: 100%;
+       height: auto;
+       text-align: center;
+       margin-top: 35px;
+   
+   }
+   
+   .navbarOptions ul {
+       list-style-type: none;
+   
+   }
+   
+   .navbarOptions ul li {
+       display: inline;
+       padding: 3%;
+   }
+   
+   .navbarOptions ul li a {
+       color: #000000;
+       font-weight: 600;
+       transition: all .3s ease;
+   
+   }
+   
+   .navbarOptions ul li a:hover {
+       color: #ff6e40 ;
+       font-weight: 700;
+   }
+   
+   #menu ul ul {
+    display:none !important;
+    position:absolute !important;
+    top:240% !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    font-size: 100% !important;
+    text-align: center!important;
+    width: 70% !important;
+    height: 50% !important;
+    padding: 5% !important;
+    background-color: #ffffff;
+    margin: auto !important;
+    font-family: 'Open Sans', sans-serif !important;
+   }
+   #menu ul ul ul {
+    display:none !important;
+    position:absolute !important;
+    top:320% !important;
+    font-size: 250% !important;
+    text-align: center!important;
+    width: 100% !important;
+    height: 250% !important;
+    background-color: #ffffff;
+    border-top: 4px solid #d0cece  !important;
+    margin: auto !important;
+    padding: 5% !important;
+    font-family: 'Open Sans', sans-serif !important;
+    text-align: justify !important;
+   }
+   /* items del menu desplegable */
+   #menu ul ul li a {
+    float:none !important;
+    width:150px !important;
+   }
+   /* enlaces de los items del menu desplegable */
+   #menu ul ul a {
+    padding:10px 15px;
+    font-family: 'Open Sans', sans-serif !important;
+    line-height: 100% !important;
+   }
+   /* items del menu desplegable al pasar el ratón */
+   #menu ul li:hover > ul {
+    display:block!important;
+   }
+   .tam-min{
+     font-family: 'Open Sans', sans-serif !important;
+     font-size: 40%;
+     text-align: justify !important;
+   }
+   .tam-min2 {
+     font-family: 'Open Sans', sans-serif !important;
+     font-size: 37%!important;
+     text-align: justify !important;
+   }
+   .tam-min a {
+     color: #acabab!important;
+   }
+   .tam-min2 a {
+     color: #acabab!important;
+   }
+   .flui-1{
+     border-right: 2px solid#d0cece !important;
+     padding: 15px 40px 0px 0px !important;
+   }
+   .tm-mi{
+     font-size: 100% !important;
+   }
+   /* Mobiles */
+   .responsiveNavbar {
+       width: 100%;
+       height: auto;
+       position: relative;
+       display: none;
+   }
+   
+   .hamburgerBtn {
+       width: 50px;
+       height: 50px;
+       background-color: #212325;
+       float: left;
+       padding: 0;
+       text-align: center;
+       line-height: 1.5;
+   }
+   
+   .hamburgerBtn a {
+       color: #ffffff;
+       font-weight: bold;
+       font-size: 2em;
+       cursor: pointer;
+   }
+   
+   .side-nav {
+       background-color: #ffffff;
+       font-family: 'Titan One', cursive;
+   }
+   
+   
+   /* width */
+   .side-nav::-webkit-scrollbar {
+       width: 0px;
+   }
+   
+   /* Track */
+   .side-nav::-webkit-scrollbar-track {
+       background: #f1f1f1;
+   }
+   
+   /* Handle */
+   .side-nav::-webkit-scrollbar-thumb {
+       background: #888;
+   }
+   
+   /* Handle on hover */
+   .side-nav::-webkit-scrollbar-thumb:hover {
+       background: #555;
+   }
+   
+   .borderTop {
+       width: 5%;
+       height: 50%;
+       background-color: #ff6e40;
+       position: absolute;
+       top: 0;
+       right: 0;
+   }
+   
+   .borderBttom {
+       width: 5%;
+       height: 50%;
+       background-color: #000000;
+       position: absolute;
+       bottom: 0;
+       right: 0;
+   }
+   
+   .side-nav li {
+       overflow: hidden;
+       display: none;
+   }
+   
+   .side-nav li>a {
+       color: #333447;
+       font-weight: 600;
+       transition: color .5s ease , background-color .5s ease;
+   }
+   
+   
+   .side-nav li>a:hover {
+       font-weight: 700;
+       background-color: #333447;
+       color: #ffffff;
+   }
+   
+    .logo-sideNav {
+        width: 70%;
+        height: auto;
+        padding: 2%;
+        text-align: center;
+        margin: 0 auto;
+    }
+   
+    .logo-sideNav a img {
+        display: none;
+    }
+   
+   
+   .exitBtn {
+       width: 100%;
+       height: auto;
+       padding: 2%;
+       text-align: center;
+       margin: 0 auto;
+       transition: all .5s ease;
+       display: none;
+       overflow: hidden;
+   }
+   
+   .exitBtn a {
+       color: #333447;
+       font-weight: 600;
+       transition: all .5s ease;
+       font-size: 2.5em;
+       cursor: pointer;
+   }
+   
+   .exitBtn:hover {
+       background-color: #333447;
+   }
+   
+   .exitBtn:hover a {
+       font-weight: 700;
+       color: #ffffff;
+   }
+   @media screen and (max-width: 1450px){
+     #menu ul ul {
+    font-size: 95% !important;
+    width: 85% !important;
+    top:200% !important;
+    padding: 5% !important;
+     }
+   }
+   @media screen and (max-width: 1290px){
+     #menu ul ul {
+    font-size: 95% !important;
+    width: 85% !important;
+    top:180% !important;
+    padding: 5% !important;
+     }
+     #menu ul ul ul {
+      top:350% !important;
+      font-size: 200% !important;
+      width: 100% !important;
+      height: 250% !important;
+     }
+     #menu ul ul li a {
+      float:none !important;
+      width:150px !important;
+     }
+     /* enlaces de los items del menu desplegable */
+     #menu ul ul a {
+      padding:10px 15px;
+      font-family: 'Open Sans', sans-serif !important;
+      line-height: 100% !important;
+     }
+     /* items del menu desplegable al pasar el ratón */
+     #menu ul li:hover > ul {
+      display:block!important;
+     }
+     .tam-min{
+       font-family: 'Open Sans', sans-serif !important;
+       font-size: 40%;
+       text-align: justify !important;
+     }
+     .tam-min2 {
+       font-family: 'Open Sans', sans-serif !important;
+       font-size: 37%!important;
+       text-align: justify !important;
+     }
+     .tam-min a {
+       color: #acabab!important;
+     }
+     .tam-min2 a {
+       color: #acabab!important;
+     }
+     .flui-1{
+       border-right: 2px solid#d0cece !important;
+       padding: 15px 40px 0px 0px !important;
+     }
+     .tm-mi{
+       font-size: 100% !important;
+     }
+   }
+   @media screen and (max-width: 1025px) and (min-width: 993px){
+     #menu ul ul {
+    font-size: 70% !important;
+    width: 85% !important;
+    top:170% !important;
+    padding: 6% !important;
+     }
+     #menu ul ul ul {
+      top:360% !important;
+      font-size: 270% !important;
+      width: 100% !important;
+      height: 250% !important;
+     }
+     #menu ul ul li a {
+      float:none !important;
+      width:150px !important;
+     }
+     /* enlaces de los items del menu desplegable */
+     #menu ul ul a {
+      padding:10px 15px;
+      font-family: 'Open Sans', sans-serif !important;
+      line-height: 100% !important;
+     }
+     /* items del menu desplegable al pasar el ratón */
+     #menu ul li:hover > ul {
+      display:block!important;
+     }
+     .tam-min{
+       font-family: 'Open Sans', sans-serif !important;
+       font-size: 40%;
+       text-align: justify !important;
+     }
+     .tam-min2 {
+       font-family: 'Open Sans', sans-serif !important;
+       font-size: 37%!important;
+       text-align: justify !important;
+     }
+     .tam-min a {
+       color: #acabab!important;
+     }
+     .tam-min2 a {
+       color: #acabab!important;
+     }
+     .flui-1{
+       border-right: 2px solid#d0cece !important;
+       padding: 15px 40px 0px 0px !important;
+     }
+     .tm-mi{
+       font-size: 100% !important;
+     }
+   }
+   
+   @media screen and (max-width: 992px) {
+       .customNavbar {
+           display: none;
+       }
+       .innerResponsive {
+           display: inline;
+       }
+   
+       .side-nav {
+           width: 50%;
+       }
+   }
+   
+   @media screen and (max-width: 600px) {
+       .side-nav {
+           width: 100%;
+       }
+   }
+   
+   @media screen and (max-width: 500px) {
+   
+   }
+   
+   @media screen and (max-width: 400px) {
+   
+   }
+   
+   @media screen and (max-width: 361px) {
+     .flui-1 {
+       border-right: 2px solid#d0cece !important;
+       padding: 15px 40px 0px 0px !important;
+     }
+   }
+   @media screen and (max-width: 801px){
+     #menu ul ul {
+      display:none !important;
+      position:absolute !important;
+      top:220% !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      font-size: 100% !important;
+      text-align: center!important;
+      width: 70% !important;
+      height: 50% !important;
+      padding: 5% !important;
+      background-color: #ffffff;
+      margin: auto !important;
+      font-family: 'Open Sans', sans-serif !important;
+     }
+     #menu ul ul ul {
+      display:none !important;
+      position:absolute !important;
+      top:350% !important;
+      font-size: 250% !important;
+      text-align: center!important;
+      width: 100% !important;
+      height: 250% !important;
+      background-color: #ffffff;
+      border-top: 4px solid #d0cece  !important;
+      margin: auto !important;
+      padding: 5% !important;
+      font-family: 'Open Sans', sans-serif !important;
+      text-align: justify !important;
+     }
+     /* items del menu desplegable */
+     #menu ul ul li a {
+      float:none !important;
+      width:150px !important;
+     }
+     /* enlaces de los items del menu desplegable */
+     #menu ul ul a {
+      padding:10px 15px;
+      font-family: 'Open Sans', sans-serif !important;
+      line-height: 100% !important;
+     }
+     /* items del menu desplegable al pasar el ratón */
+     #menu ul li:hover > ul {
+      display:block!important;
+     }
+     .tam-min{
+       font-family: 'Open Sans', sans-serif !important;
+     font-size: 121%!important;
+     text-align: justify !important;
+     padding: 0 0 0 25px!important;
+     }
+     .tam-min2 {
+       font-family: 'Open Sans', sans-serif !important;
+     font-size: 121%!important;
+     text-align: justify !important;
+     padding: 0 0 0 25px!important;
+     }
+     .tam-min a {
+       color: #acabab!important;
+         font-size: 100%!important;
+     }
+     .tam-min2 a {
+       color: #acabab!important;
+       font-size: 100%!important;
+     }
+     .flui-1{
+       border-right: none !important;
+       padding: 15px 40px 0px 18px !important;
+     }
+     .flui{
+       border-right: none !important;
+     padding: 0px 0px 0px 32px !important;
+     color: #333447;
+     font-weight: 600;
+     transition: color .5s ease , background-color .5s ease;
+     }
+     .ajust-img{
+         padding: 0px 0px 0px 16px!important;
+     }
+   }
+   

@@ -1,0 +1,31 @@
+<app-navcruds></app-navcruds>
+<div class="container">
+  <div class="row">
+    <div class="col s7">
+      <table>
+        <thead>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Correo</th>
+          <th>Contraseña</th>
+          <th>Operaciones</th>
+        <tbody>
+          <tr *ngFor="let user of userService.users">
+              <td> {{ user.first_name }}</td>
+              <td> {{ user.last_name }}</td>
+              <td> {{ user.email }}</td>
+              <td> {{ user.password }}</td>
+              <td>
+                <a (click)="editUser(user)">
+                  <i class="material-icons">edit</i>
+                </a>
+                <a (click)="deleteUser(user._id)">
+                    <i class="material-icons">delete</i>
+                  </a>
+              </td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

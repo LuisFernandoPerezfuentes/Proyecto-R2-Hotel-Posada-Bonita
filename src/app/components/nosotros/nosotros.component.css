@@ -1,0 +1,65 @@
+/*NOSOTROS*/
+.text-nosotros p {
+    font-family: 'Wendy One', sans-serif;
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: justify;
+    }
+    
+    .text-nosotros h2{
+      font-family: 'Titan One', cursive;
+      color: #000000;
+    }
+    
+    .deep-color {
+        background-color: #ff6e40 !important;
+        font-family: 'Titan One', cursive;
+        font-size: 1.8rem;
+    }
+    
+    .collapsible-body {
+        border-bottom: 10px solid #ff6e40 !important;
+      }
+    
+    .tam-tipografia{
+      font-family: 'Wendy One', sans-serif !important;
+      font-size: 1.2rem !important;
+      text-align: center;
+    }
+    
+    .slider {
+      width: 62%;
+      margin: auto;
+      overflow: hidden;
+    }
+    
+    .slider ul {
+      display: flex;
+      padding: 0;
+      width: 400%;
+    
+      animation: cambio 10s infinite alternate linear;
+    }
+    
+    .slider li {
+      width: 100%;
+      list-style: none;
+    }
+    
+    .slider img {
+      width: 100%;
+    }
+    
+    @keyframes cambio {
+      0% {margin-left: 0;}
+      20% {margin-left: 0;}
+    
+      25% {margin-left: -100%;}
+      45% {margin-left: -100%;}
+    
+      50% {margin-left: -200%;}
+      70% {margin-left: -200%;}
+    
+      75% {margin-left: -300%;}
+      100% {margin-left: -300%;}
+    }

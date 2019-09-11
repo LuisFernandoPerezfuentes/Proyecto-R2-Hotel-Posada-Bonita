@@ -1,0 +1,31 @@
+<section>
+    <div class="customNavbar">
+        <div class="innerNavbar">
+            <div class="navbarContent">
+                <div class="logoNavbar">
+                    <a><img class="responsive-img img-tam" src="assets/img/logo1.jpg" alt=""></a>
+                </div>
+                <div class="navbarList">
+                    <div class="row">
+                        <div class="col xl11 l11">
+                            <div class="navbarOptions">
+                                <ul>
+                                    <li><a routerLink="/index" routeLinkActive="active">Inicio</a></li>
+                                    <li><a routerLink="/nosotros" routeLinkActive="active">Nosotros</a></li>
+                                    <li><a routerLink="/supplies" routeLinkActive="active">Inventario</a></li>
+                                    <li><a routerLink="/clients" routeLinkActive="active">Datos del Personal</a></li>
+                                    <li><a><i mat-button [matMenuTriggerFor]="menu" class="material-icons">Cerrar Sesion</i></a></li>
+                                    <mat-menu #menu="matMenu">
+                                        <button (click)="onLogout()" mat-menu-item >
+                                            <span>Cerra Sesión</span>
+                                        </button>
+                                    </mat-menu>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

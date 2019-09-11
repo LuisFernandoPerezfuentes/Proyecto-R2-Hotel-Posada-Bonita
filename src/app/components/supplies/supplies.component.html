@@ -1,0 +1,66 @@
+<app-navpages></app-navpages>
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <form #supplieForm="ngForm" (ngSubmit)="addSupplie(supplieForm)">
+            <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]= "supplieService.selectedSupplie._id">
+            <div class="row">
+              <div class="imput-field col s12">
+                <input type="text" name="name" #name="ngModel" 
+                [(ngModel)] = "supplieService.selectedSupplie.name"
+                placeholder="Nombre Materia Prima">
+              </div>
+              <div class="imput-field col s12">
+                <input type="text" name="brand" #brand="ngModel" 
+                [(ngModel)] = "supplieService.selectedSupplie.brand"
+                placeholder="Marca">
+              </div>
+              <div class="imput-field col s12">
+                <input type="text" name="quantity" #quantity="ngModel" 
+                [(ngModel)] = "supplieService.selectedSupplie.quantity"
+                placeholder="Cantidad">
+              </div>
+              <div class="card-action">
+                <div class="input-fiel col s12">
+                  <button class="btn orange">Save</button>
+                  <button class="btn right red" (click)="resetForm(supplieForm)">Clean</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col s12" id="tabsupplies">
+      <table >
+        <thead>
+          <th>Nombre del producto</th>
+          <th>Descripción</th>
+          <th>Cantidad</th>
+          <div *ngIf="!ignore">
+              <th>Operaciones</th>
+          </div>
+        <tbody>
+          <tr *ngFor="let supplie of supplieService.supplies">
+              <td> {{ supplie.name }}</td>
+              <td> {{ supplie.brand }}</td>
+              <td> {{ supplie.quantity }}</td>
+              <div *ngIf="!ignore">
+                  <td>
+                      <a (click)="editSupplie(supplie)">
+                        <i class="material-icons">edit</i>
+                      </a>
+                      <a (click)="deleteSupplie(supplie._id)">
+                          <i class="material-icons">delete</i>
+                        </a>
+                    </td>
+              </div>
+            </tr>
+        </tbody>
+        <button class="btn red" (click)="generarPDF()"> Generar PDF</button>
+      </table>
+    </div>
+  </div>
+</div>
