@@ -52,7 +52,7 @@
     "timeago.js": "^4.0.0-beta.2",
     "tslib": "^1.9.0",
     "typescript": "~3.4.3",
-    "xlsx": "^0.15.1",
+    "xlsx": "^0.17.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
